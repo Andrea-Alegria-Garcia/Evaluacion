@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="418dp"
+        android:layout_height="743dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewBien"
+        android:layout_width="210dp"
+        android:layout_height="36dp"
+        android:ems="15"
+        android:text="Welcome Back!"
+        android:textColor="#0F0F0F"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="40dp"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <ImageView
+        android:id="@+id/imageBienve"
+        android:layout_width="407dp"
+        android:layout_height="197dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/bien"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="86dp"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.587">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textFieldUsuario"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/usuario"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textUSE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="   User">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/mail" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="   Password">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/lock"
+                app:endIconMode="password_toggle"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:id="@+id/textViewPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="end"
+            android:text="Forgot password?"
+            android:textColor="@color/principal"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/containedButton"
+            android:layout_width="314dp"
+            android:layout_height="70dp"
+            android:text="LOGIN"
+            android:textSize="18sp"
+            app:backgroundTint="@color/purple_700"
+            app:cornerRadius="60dp"/>
+        <TextView
+            android:id="@+id/textViewOpcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:text="Or via social media"
+            android:textColor="#838383"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="543dp"
+            tools:ignore="MissingConstraints" />
+        <ImageView
+            android:id="@+id/imageViewGoogle"
+            android:layout_width="47dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/gmail"
+            tools:layout_editor_absoluteX="110dp"
+            tools:layout_editor_absoluteY="578dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageViewFacebook"
+            android:layout_width="47dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/facebook"
+            tools:layout_editor_absoluteX="182dp"
+            tools:layout_editor_absoluteY="578dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageViewTwitter"
+            android:layout_width="47dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/twitter"
+            tools:layout_editor_absoluteX="256dp"
+            tools:layout_editor_absoluteY="578dp"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="540dp"
+        tools:ignore="MissingConstraints">
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.743"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TextView
+            android:id="@+id/textViewRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Don't have an account?"
+            android:textColor="#838383"
+            android:textSize="16sp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textViewRegistro1"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Regíster now"
+            android:textColor="@color/principal"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textViewCondiciones"
+            android:layout_width="274dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="By signing up, your are agree with our"
+            android:textColor="#838383"
+            android:textSize="16sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="103dp"
+            tools:layout_editor_absoluteY="682dp" />
+
+        <TextView
+            android:id="@+id/textViewCondiciones1"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Terms and conditions"
+            android:textColor="@color/principal"
+            android:textSize="16sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="121dp"
+            tools:layout_editor_absoluteY="703dp" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
